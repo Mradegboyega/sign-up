@@ -1,0 +1,209 @@
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* Resetting default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f7fdfc;
+}
+
+/* Container styles */
+.container_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  margin-top: 20px;
+}
+
+.container {
+  width: 85%;
+  height: 85vh;
+  display: flex;
+}
+
+/* Left side styles */
+.left_side {
+  width: 40%;
+  padding: 10px;
+  display: flex;
+}
+
+.mini_box {
+  margin-top: 5rem;
+  width: 100%;
+  height: 275px;
+  margin-left: 2rem;
+}
+
+.mini_box img {
+  width: 25%;
+}
+
+.mini_box h3 {
+  margin-top: 10px;
+  color: #000b0a;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: -0.8px;
+}
+
+.desktop_text {
+  margin-top: 10px;
+  color: #737373;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.mobile_text {
+  display: none;
+}
+
+.left_side h3 {
+  color: rgba(0, 11, 10, 1);
+}
+
+/* Right side styles */
+.right_side {
+  width: 60%;
+  padding: 30px;
+  background-color: #f7fdfc;
+}
+
+/* Form styles */
+form {
+  margin: 0 auto;
+  width: 80%;
+  height: max-content;
+  padding: 15px;
+  background: #fff;
+  box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.1);
+  border-radius: 6px;
+}
+
+/* Form sections styles */
+.name,
+.gender_date_of_birth,
+.weight_height,
+.password,
+.activity {
+  display: flex;
+  flex-wrap: wrap; /* Allow elements to wrap to the next line */
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.name {
+  margin-top: 15px;
+}
+
+/* Input and select styles */
+input,
+select,
+#d_O_b {
+  width: 100%;
+  height: 35px;
+  margin-top: 10px;
+  border: 1px solid rgba(240, 240, 240, 1);
+  outline: none;
+}
+
+select:focus,
+input:focus {
+  border: 3px solid rgba(46, 196, 182, 1);
+}
+
+/* Additional details styles */
+.details {
+  color: rgba(1, 28, 52, 1);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.1px;
+}
+
+select {
+  color: rgba(115, 115, 115, 1);
+}
+
+select,
+input,
+#d_O_b {
+  background-color: #fff;
+}
+
+.password input,
+.activity select {
+  width: 100%;
+}
+
+/* Register button styles */
+.register_button input {
+  height: 35px;
+  color: #fff;
+  width: 100%;
+  background-color: #2ec4b6;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Terms and conditions styles */
+.terms_and_condition,
+.terms_and_condition_two {
+  margin-top: 10px;
+  color: #000;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: center;
+}
+
+.terms_and_condition_two {
+  display: none;
+}
+
+.terms_of_use,
+.privacy_policy {
+  color: #2ec4b6;
+  text-decoration-line: underline;
+}
+
+/* Responsive design */
+
+/* Mobile screen styles */
+@media screen and (max-width: 800px) {
+  .desktop_text {
+    display: none; /* Hide desktop text on small screens */
+  }
+
+  .mobile_text {
+    display: block; /* Show mobile text on small screens */
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0px;
+  }
+
+  /* Hide terms_and_condition on small screens */
+  .terms_and_condition {
+    display: none;
+  }
+
+  /* Show terms_and_condition_two on small screens */
+  .terms_and_condition_two {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #000;
+    font-weight: 500;
+  }
+}

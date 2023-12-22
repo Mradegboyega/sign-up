@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Signup</title>
+  </head>
+  <body>
+    <main class="container_wrapper">
+      <div class="container">
+        <div class="left_side">
+          <div class="mini_box">
+            <img src="asset/Logo.png" alt="" />
+            <h3>For Individual</h3>
+            <p class="desktop_text">
+              Start benefitting from the wellness experience. For <br> companies
+              looking on increasing productivity, and improving organization
+              wellness.
+            </p>
+            <p class="mobile_text">Inspiring wholesome harmony for the mind, body and spirit, for everyone, everywhere.</p>
+          </div>
+        </div>
+        <div class="right_side">
+          <form action="">
+            <section class="name">
+              <div class="input_box">
+                <label for="first_name">First Name</label><br />
+                <input type="text" id="first_name" />
+              </div>
+              <div class="input_box">
+                <label for="last_name">Last Name</label> <br />
+                <input type="text" id="last_name" />
+              </div>
+            </section>
+
+            <section class="gender_date_of_birth">
+              <div class="input_box">
+                <label for="gender">Gender</label><br />
+                <select id="gender">
+                  <option disabled selected hidden value="select">Select here</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+              </div>
+              <div class="input_box">
+                <label for="d_O_b" class="add">Date of Birth</label><br/>
+                <input type="date" id="d_O_b" placeholder="select here" /> 
+              </div>
+            </section>
+
+            <section class="weight_height">
+              <div class="input_box">
+                <label for="weight" class="add">Weight (KG)</label><br>
+                <input type="text" id="weight" placeholder="Enter Weight" />
+              </div>
+              <div class="input_box">
+                <label for="height" class="add">Height (CM)</label><br>
+                <input type="text" id="height" placeholder="Enter height here.." />
+              </div>  
+            </section>
+
+            <section class="details activity">
+              <label for="activity">Activity</label><br>
+              <select id="activity">
+                <option value="select">Select here</option>
+              </select>
+            </section>
+
+            <section class="details password">
+              <label for="password">Password</label><br>
+              <input type="password" id="password">
+            </section>
+
+            <div class="register_button">
+              <input type="button" value="Register" >
+            </div>
+            <p class="terms_and_condition">
+              By clicking Register, you agree to our
+              <span class="terms_of_use">Terms of Use </span>
+              and our
+              <span class="privacy_policy">Privacy Policy</span>
+            </p>
+          </form>
+          <p class="terms_and_condition_two">
+            By clicking Register, you agree to our
+            <span class="terms_of_use">Terms of Use </span>
+            and our
+            <span class="privacy_policy">Privacy Policy</span>
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
